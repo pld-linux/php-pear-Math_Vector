@@ -23,13 +23,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Classes to represent Tuples, general Vectors, and 2D-/3D-vectors, as
 well as a static class for vector operations.
 
-This class has in PEAR status: %{_status}
+This class has in PEAR status: %{_status}.
 
 %description -l pl
 Klasy do reprezentowania krotek, ogólnych wektorów oraz wektorów
 2D/3D, a tak¿e statyczna klasa do operacji na wektorach.
 
-Ta klasa ma w PEAR status: %{_status}
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
