@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Classes to represent Tuples, general Vectors, and 2D-/3D-vectors, as
 well as a static class for vector operations.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Klasy do reprezentowania krotek, ogólnych wektorów oraz wektorów
