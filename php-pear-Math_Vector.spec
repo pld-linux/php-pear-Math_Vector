@@ -1,17 +1,19 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Math
 %define		_subclass	Vector
+%define		_status		beta
+
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_class}_%{_subclass} - Vector and vector operation classes
 Summary(pl):	%{_class}_%{_subclass} - Wektory i klasy operuj±ce na wektorach
 Name:		php-pear-%{_pearname}
-Version:	0.5.1
-Release:	1
+Version:	0.6.0
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/
-BuildRequires:	rpm-php-pearprov
+BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -20,9 +22,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Classes to represent Tuples, general Vectors, and 2D-/3D-vectors, as
 well as a static class for vector operations.
 
+This class has in PEAR status: %{_status}
+
 %description -l pl
 Klasy do reprezentowania krotek, ogólnych wektorów oraz wektorów
 2D/3D, a tak¿e statyczna klasa do operacji na wektorach.
+
+Ta klasa ma w PEAR status: %{_status}
 
 %prep
 %setup -q -c
