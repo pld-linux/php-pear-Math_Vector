@@ -6,10 +6,11 @@ Summary:	%{_class}_%{_subclass} - Vector and vector operation classes
 Summary(pl):	%{_class}_%{_subclass} - Wektory i klasy operuj±ce na wektorach
 Name:		php-pear-%{_pearname}
 Version:	0.5.0
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+Patch0:		%{name}-cosmetic.patch
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov
 Requires:	php-pear
@@ -26,6 +27,7 @@ Klasy do reprezentowania krotek, ogólnych wektorów oraz wektorów
 
 %prep
 %setup -q -c
+%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
