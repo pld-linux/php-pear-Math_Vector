@@ -1,6 +1,8 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Math
 %define		_subclass	Vector
+%define		_status		beta
+
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_class}_%{_subclass} - Vector and vector operation classes
 Summary(pl):	%{_class}_%{_subclass} - Wektory i klasy operuj±ce na wektorach
@@ -20,9 +22,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Classes to represent Tuples, general Vectors, and 2D-/3D-vectors, as
 well as a static class for vector operations.
 
+This class has in PEAR status: %{_status}
+
 %description -l pl
 Klasy do reprezentowania krotek, ogólnych wektorów oraz wektorów
 2D/3D, a tak¿e statyczna klasa do operacji na wektorach.
+
+Ta klasa ma w PEAR status: %{_status}
 
 %prep
 %setup -q -c
