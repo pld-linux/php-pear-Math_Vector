@@ -20,6 +20,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Classes to represent Tuples, general Vectors, and 2D-/3D-vectors, as
 well as a static class for vector operations.
 
+%description -l pl
+Klasy do reprezentowania krotek, ogólnych wektorów oraz wektorów
+2D/3D, a tak¿e statyczna klasa do operacji na wektorach.
+
 %prep
 %setup -q -c
 
