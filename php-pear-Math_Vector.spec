@@ -4,8 +4,8 @@
 %define		_status		beta
 
 %define		_pearname	%{_class}_%{_subclass}
-Summary:	%{_class}_%{_subclass} - Vector and vector operation classes
-Summary(pl):	%{_class}_%{_subclass} - Wektory i klasy operuj±ce na wektorach
+Summary:	%{_class}_%{_subclass} - vector and vector operation classes
+Summary(pl):	%{_class}_%{_subclass} - wektory i klasy operuj±ce na wektorach
 Name:		php-pear-%{_pearname}
 Version:	0.6.2
 Release:	1
