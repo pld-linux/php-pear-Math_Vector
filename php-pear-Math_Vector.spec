@@ -9,6 +9,7 @@ Summary(pl):	%{_class}_%{_subclass} - wektory i klasy operuj±ce na wektorach
 Name:		php-pear-%{_pearname}
 Version:	0.6.2
 Release:	3
+Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
