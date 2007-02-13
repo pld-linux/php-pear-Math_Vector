@@ -5,7 +5,7 @@
 
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_class}_%{_subclass} - vector and vector operation classes
-Summary(pl.UTF-8):   %{_class}_%{_subclass} - wektory i klasy operujące na wektorach
+Summary(pl.UTF-8):	%{_class}_%{_subclass} - wektory i klasy operujące na wektorach
 Name:		php-pear-%{_pearname}
 Version:	0.6.2
 Release:	4
@@ -36,7 +36,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
