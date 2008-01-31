@@ -8,7 +8,7 @@ Summary:	%{_class}_%{_subclass} - vector and vector operation classes
 Summary(pl.UTF-8):	%{_class}_%{_subclass} - wektory i klasy operujące na wektorach
 Name:		php-pear-%{_pearname}
 Version:	0.6.2
-Release:	4
+Release:	5
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
