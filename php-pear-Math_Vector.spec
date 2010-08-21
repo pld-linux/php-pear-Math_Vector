@@ -2,14 +2,12 @@
 %define		_class		Math
 %define		_subclass	Vector
 %define		_status		beta
-
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_class}_%{_subclass} - vector and vector operation classes
 Summary(pl.UTF-8):	%{_class}_%{_subclass} - wektory i klasy operujące na wektorach
 Name:		php-pear-%{_pearname}
 Version:	0.6.2
-Release:	5
-Epoch:		0
+Release:	6
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -19,8 +17,12 @@ BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear
+Suggests:	php-pear-PHPUnit <= 0.6.2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+# exclude optional dependencies
+%define		_noautoreq	pear(PHPUnit.*)
 
 %description
 Classes to represent Tuples, general Vectors, and 2D-/3D-vectors, as
@@ -38,9 +40,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
+Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
